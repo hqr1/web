@@ -1,0 +1,100 @@
+.dietBrief{
+    width:1280px;
+    margin:0 auto;
+}
+.dietBrief ul{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-left: 0;
+}
+.dietBrief ul li{
+    width:60%;
+}
+.dietBrief ul li .imgItem1{
+    background: url('../../img/diet.jfif');
+    width:96%;
+    height:300px;
+    background-size: cover;
+}
+.dietBrief ul li .imgItem2{
+    background: url('../../img/diet2.jfif');
+    width:96%;
+    height:300px;
+    background-size: cover;
+}
+.dietBrief ul li .imgItem3{
+    background: url('../../img/diet3.jfif');
+    width:96%;
+    height:300px;
+    background-size: cover;
+}
+.dietBrief .fontStyle{
+    font-size: 30px;
+    font-weight: 800;
+    color: orange;
+}
+/* 主要特点 */
+.mainFeature {
+    width:1280px;
+    margin:10px auto;
+}
+.mainFeature .feature{
+    margin:20px auto;
+    width:90%;
+}
+.mainFeature .feature p{
+    width:80%;
+    font-size: 16px;
+    line-height: 22px;
+    margin:10px 20px;
+}
+.mainFeature .feature .detail{
+    width:80%;
+    display: flex;
+    flex-direction: row;
+}
+.mainFeature .feature .detail p{
+    width:50%;
+}
+.mainFeature .feature .detail .detailImg{
+    background: url('../../img/diet4.jfif');
+    width:40%;
+    height:180px;
+    background-size: cover;
+    margin-left: 40px;
+}
+/* 药膳例子 */
+.form{
+    width:1280px;
+    margin:10px auto;
+}
+.form .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:20px 0px;
+}
+.form .list .card{
+    width:45%;
+}
+.form .list .card p{
+    padding:10px;
+}
+.form .list .card h3{
+    margin:10px;
+}
+.form .list .cardFlex{
+    display: flex;
+    flex-direction: row;
+}
+.form .list .card .img{
+    width:40%;
+    height: 200px;
+    background: url('../../img/diet5.jfif');
+    background-size: cover;
+}
+.form .list .card:hover{
+    -webkit-box-shadow: 3px 3px 10px #888888;
+    box-shadow: 3px 3px 10px #888888;
+}

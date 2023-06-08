@@ -1,0 +1,154 @@
+.tab{
+    width: 1280px;
+    margin:20px auto; 
+    position: relative;
+}
+.tab .display{
+    display: none;
+    margin-top:4px;
+   
+}
+.tab span{
+    padding:10px 30px;
+}
+.tab .search{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    right:20px; 
+    top: 6px;
+    width:300px;
+}
+.tab input{
+    border: 1px solid black;
+    width:60%;
+    padding:2px;
+}
+.tab .searchBtn{
+    background-color: #0087be;
+    border: 1px white solid;
+    border-radius: 2px;
+    padding:4px 8px;
+    color: white;
+}
+.tab .emptyBtn{
+    border: 1px black solid;
+    border-radius: 2px;
+    padding:4px 8px;
+    color: black;
+}
+.activeTab{
+    background-color: #0087be;
+    color: white;
+}
+img{
+    border:none;
+}
+.medicineBrief{
+    width:1280px;
+    margin:0 auto;
+}
+.medicineBrief .contentBrief span{
+    color: orange;
+    font-size: 28px;
+    font-weight: 800;
+}
+/* 手风琴css */
+.pics{
+    width: 1200px; /* 1个 600px，4个 150px*/
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    overflow: hidden;
+}
+.pics ul{
+    display: flex;    /* flex 布局让 li 横向排列 */
+    justify-content: space-between;  /* 内容靠向两端 */
+    padding-left: 0px;
+}
+.pics ul li{
+    width: 150px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    transition:all 0.4s;   /* 过渡动画 */
+    flex-grow: 1;   /* 让 li 始终能占满整个 ul ，保证变化过程中 li 之间没有缝隙 */
+}
+.pics ul li img{
+    position: absolute;   /* 确保图片在 li 里显示中间部分 */
+    left:50%;
+    top:0;
+    margin-left: -300px;
+    overflow: hidden;
+}
+.pics ul li.active{    /* 有类 active li 宽度为 600px。去掉，就会恢复 100px */
+    width: 600px;
+}
+.pics ul li img{
+    position: absolute;
+    left:50%;
+    top:0;
+    margin-left: -300px;
+}
+.display {
+    margin: 0 auto;
+    width:1280px;
+}
+.display .details1{
+    width: 90%;
+    -webkit-box-shadow: 3px 3px 10px #888888;
+    box-shadow: 3px 3px 10px #888888;
+    margin:20px auto;
+    font-size:16px;
+    line-height: 24px;
+}
+.display .details2{
+    width: 90%;
+    -webkit-box-shadow: 3px 3px 10px #888888;
+    box-shadow: 3px 3px 10px #888888;
+    margin:20px auto;
+    font-size:16px;
+    line-height: 24px;
+}
+.display .details3{
+    width: 90%;
+    -webkit-box-shadow: 3px 3px 10px #888888;
+    box-shadow: 3px 3px 10px #888888;
+    margin:20px auto;
+    font-size:16px;
+    line-height: 24px;
+}
+.display  .dHeader{
+    background-color: #0087be;
+    padding:10px;
+    color: aliceblue;
+    position: relative;
+}
+.display .describe{
+    padding:10px 20px;
+    transition: height 0.2s;
+    overflow: hidden;
+}
+.display  .arrowIcon{
+  position: absolute;
+  top:14px;
+  right:16px;
+}
+.display  .arrowIcon .upArrow{
+   display: none; 
+   background-image: url('../img/upArrow.png');
+   width:16px;
+   height:16px;
+   background-size: cover;
+  }
+.display  .arrowIcon .downArrow{
+    /* display: none;  */
+    background-image: url('../img/downArrow.png');
+    width:16px;
+    height:16px;
+    background-size: cover;
+}
+.describeAnimate{
+    transition: height 0.2s;
+}

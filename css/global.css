@@ -1,0 +1,64 @@
+/* 全局样式 */
+body,
+div,
+dl,
+dt,
+dd,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+input,
+button,
+text {
+  vertical-align: top;
+  outline: none;
+  border: none;
+}
+button {
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+}
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+}
+input,
+textarea {
+  box-sizing: content-box;
+  outline: none;
+  background: 0 0;
+  font-family: "Microsoft YaHei";
+}

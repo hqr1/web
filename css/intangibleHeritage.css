@@ -1,0 +1,74 @@
+.location{
+    font-size: 14px;
+}
+.location a{
+    color: black;
+}
+.mainSection{
+    width: 1280px;
+    margin:2px auto;
+}
+.intangibleDetail{
+    width:1280px;
+    margin:10px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.intangibleDetail .card {
+    margin:18px 0px;
+    -webkit-box-shadow: 3px 3px 10px #888888;
+    box-shadow: 3px 3px 10px #888888;
+    width:40%;
+}
+.intangibleDetail .card .itemDetails {
+    width:70%;
+    font-size: 14px;
+    margin:20px auto;
+}
+.intangibleDetail .card .commonStyle{
+    width:160px;
+    height:160px;
+}
+.intangibleDetail .itemImg1{
+    background: url("../img/item.jfif");
+    background-size: cover;
+    margin:10px;
+}
+.intangibleDetail .itemImg2{
+    background: url("../img/item1.png");
+    background-size: cover;
+    margin:10px;
+}
+.intangibleDetail .itemImg3{
+    background: url("../img/item2.jfif");
+    background-size: cover;
+    margin:10px;
+}
+.intangibleDetail .itemImg4{
+    background: url("../img/item3.jfif");
+    background-size: cover;
+    margin:10px;
+}
+.itemList{
+    width:1280px;
+    margin:10px auto;
+    
+}
+.itemList .card{
+    -webkit-box-shadow: 3px 3px 10px #888888;
+    box-shadow: 3px 3px 10px #888888;
+    width:90%;
+    margin:10px auto;
+}
+
+.itemList .card .content{
+    width:90%;
+    margin:0px auto;
+    padding:10px 0;
+}
+.itemList .card ul li {
+    margin: 8px 0;
+    list-style: disc;
+}

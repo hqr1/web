@@ -1,0 +1,75 @@
+.location{
+    font-size: 14px;
+}
+.location a{
+    color: black;
+}
+.mainSection{
+    width: 1280px;
+    margin:2px auto;
+}
+.bookDetails{
+    width:1280px;
+    margin:10px auto;
+}
+.bookDetails ul li .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:18px 0px;
+    -webkit-box-shadow: 3px 3px 10px #888888;
+    box-shadow: 3px 3px 10px #888888;
+}
+.bookDetails .book1{
+    background: url("../img/book.jpg");
+    width:220px;
+    height: 220px;
+    background-size: cover;
+    margin: 10px;
+}
+.bookDetails .book2{
+    background: url("../img/book2.jfif");
+    width:220px;
+    height: 220px;
+    background-size: cover;
+    margin: 10px;
+}
+.bookDetails .book3{
+    background: url("../img/book3.jfif");
+    width:220px;
+    height: 220px;
+    background-size: cover;
+    margin: 10px;
+}
+.bookDetails .book4{
+    background: url("../img/book4.jfif");
+    width:220px;
+    height: 220px;
+    background-size: cover;
+    margin: 10px;
+}
+.bookDetails ul li .content{
+    width:70%;
+    margin-top: 50px;
+}
+/* 更多名著列表 */
+.bookList{
+    width:1280px;
+    margin:0 auto;
+}
+.bookList ul li p{
+    margin:10px 40px;
+    font-size: 16px;
+}
+.bookList ul li .writer{
+    font-size: 12px;
+    color: gray;
+    line-height: 16px;
+}
+.bookList ul {
+    width:80%;
+    margin: 40px auto;
+}
+.bookListTitle{
+    color: #0087be;
+}

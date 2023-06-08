@@ -1,0 +1,15 @@
+.tab{
+    width: 1280px;
+    margin:10px auto;
+}
+.tab .display{
+    display: none;
+    margin-top:4px;
+}
+.tab span{
+    padding:10px 30px;
+}
+.activeTab{
+    background-color: #0087be;
+    color: white;
+}

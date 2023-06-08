@@ -1,0 +1,111 @@
+.headTitle{
+    width:1280px;
+    margin:10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.headTitle .newsIcon{
+    width:100px;
+    height: 100px;
+    background: url("../img/newsIcon.jpg");
+    background-size: cover;
+    margin-left: 100px;
+}
+.headTitle .headerContent{
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+   margin: 20px 0px;
+}
+.headerContent h1{
+    text-align: center;
+}
+.headTitle .headerContent span{
+    font-size: 14px;
+    color:gray;
+    text-align: center;
+}
+.newsList{
+    width:1280px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.newsList .listImg{
+    width:500px;
+    height: 400px;
+    background: url('../img/news1.jpg');
+    background-size: cover;
+    position: relative;
+}
+.newsList .listImg span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.5;
+    width: 100%;
+    height: 30px;
+    background: #333;
+}
+.newsList .listImg .hoverTip{
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 30px;
+}
+.newsList ul{
+    width: 60%;
+    margin-top: 40px;
+}
+.newsList ul li{
+    margin:20px 0;
+    display: flex;
+    flex-direction: row;
+}
+.newsList ul li span{
+    margin-top: 10px;
+    margin-right: 10px;
+    width:5px;
+    height: 5px;
+    background-color: #0087be;
+    border-radius: 50%;
+    border: 1px #fff solid;
+}
+.newsList ul li p{
+    width:90%;
+}
+/* 地方新闻 */
+.local{
+    width:1280px;
+    margin:10px auto;
+}
+.local ul li {
+    margin:20px;
+}
+.local ul li .localTitle{
+    display: flex;
+    flex-direction: row;
+}
+.local ul li span{
+    background-color: #0087be;
+    color:white;
+    padding:4px 8px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+.local ul li .localTitle p{
+    margin: 4px 10px;
+    font-weight: 700;
+}
+.local ul li .localContext{
+    width:90%;
+    font-size:14px;
+    color:rgb(106, 100, 100)
+}

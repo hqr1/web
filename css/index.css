@@ -1,0 +1,210 @@
+/* 轮播图 */
+.lunboBox {
+    position: relative;
+    margin: 20px auto;
+    width: 1280px;
+    height: 560px;
+    overflow: hidden;
+}
+.lunboImg{
+    background-size:cover;
+    object-fit: cover;
+    height: 100%;
+    width:100%;
+}
+.imgDiv{
+    width:1280px;
+    height: 560px;
+}
+.left,
+.right {
+    display: none;
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    background: rgba(0, 0, 0, .3);
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.img li {
+    list-style: none;
+    padding:0 0;
+    display: block;
+}
+
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.circle li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    /*鼠标经过显示小手*/
+    cursor: pointer;
+    box-shadow: 1px 1px;
+}
+.current {
+    background-color: #fff;
+}
+.img {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    padding:0;
+    margin:0;
+}
+/*发展介绍 */
+.dev{
+    width:1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.dev .more{
+    position: absolute;
+    right:0;
+    top:10px;
+}
+.dev .more a{
+    font-size: 14px;
+    color: gray;
+}
+.box ul li{
+margin: 20px 60px 60px;
+position: relative;
+padding: 0px 10px;
+border-radius: 10px;
+line-height: 20px;
+}
+.box{
+height: 530px;
+padding: 0px 0 40px 60px;
+width:80%;
+}
+
+.box ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+position: relative;
+transition: all 0.5s linear;
+top:0
+}
+
+.box ul:last-of-type{top:40px}
+
+
+.box ul li > span{
+content: "";
+display: block;
+width: 0;
+height: 100%;
+border:1px solid #fff;
+position: absolute;
+top:0;
+left:-30px
+}
+
+.box ul li > span:before,.box ul li > span:after{
+content: "";
+display: block;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background:#ff6d6d;
+border:2px solid #fff;
+position: absolute;
+left:-7.5px
+}
+.box ul li .title{
+margin:10px 0px;
+padding-top:0px;
+}
+.box ul li .time{
+    margin:10px 0px;
+    font-size: 12px;
+    color: gray;
+    }
+/* 名著介绍 */
+.showPart{
+    width:1280px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.showPart .masterPiece{
+    width:45%;
+}
+.showPart .masterPiece ul li a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.showPart .masterPiece ul li div{
+    width:45%;
+}
+.showPart .masterPiece .bookImg{
+    width:200px;
+    height:200px;
+    background: url('/img/book.jpg');
+    background-size: cover;
+}
+.showPart .content{
+    padding:40px 20px 30px 0px;
+}
+.showPart .content span{
+    padding-top:10px;
+    font-size: 14px;
+    display: block;
+}
+/* 非遗项目 */
+
+.showPart .item{
+    width:45%;
+}
+.showPart .item ul li a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.showPart .item ul li div{
+    width:45%;
+}
+.showPart .item .bookImg{
+    width:200px;
+    height:200px;
+    background: url('/img/item.jfif');
+    background-size: cover;
+}
+.showPart ul{
+    border-top: 1px gray solid;
+    padding-top:8px;
+}
+.showPart .headerPart{
+    position: relative;
+}
+.showPart .headerPart .more{
+    position: absolute;
+    top:28px;
+    right: 0px;
+}
+.showPart .headerPart .more a{
+    font-size: 14px;
+    color: gray;
+}

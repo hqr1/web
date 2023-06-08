@@ -1,0 +1,58 @@
+.qigongBrief{
+    width:1280px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+}
+.qigongBrief .qigongBanner{
+    background: url('../../img/qigong1.jfif');
+    width:80%;
+    height: 300px;
+    background-size: cover;
+}
+.qigongBrief p{
+    padding:30px;
+    width:40%;
+}
+.qigongBrief p .font{
+    font-size: 30px;
+    font-weight: 800;
+    color: orange;
+}
+.devBrief{
+    width:1280px;
+    margin:10px auto;
+}
+.devBrief p{
+    margin-top: 10px;
+    width:90%;
+    margin:0 auto;
+}
+.baduanjin {
+    width:1280px;
+    margin:10px auto;
+}
+.baduanjin .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.baduanjin .content p{
+   padding:20px 40px;
+}
+.baduanjin .baduanjinImg{
+    background: url('../../img/baduanjin.jfif');
+    width:58%;
+    height: 140px;
+    position: relative;
+}
+.baduanjin .startIcon{
+    width:50px;
+    height: 50px;
+    background-size: cover;
+    background: url('../../img/on.svg');
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}

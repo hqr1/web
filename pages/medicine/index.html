@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/medicine.css">
+    <script type="text/javascript" src="/js/show.js"></script>
+    <script type="text/javascript" src="/js/animateFlex.js"></script>
+    <title>中医药文化宣传门户</title>
+</head>
+
+<body>
+    <script src="../../js/include.js"></script>
+    <!-- 头部导航栏 -->
+    <div class="headNav">
+        <include src="../components/header.html" ></include>
+    </div>
+    <!--  简介-->
+    <section class="medicineBrief">
+        <div class="contentBrief">
+            <p><span>中药材</span> 指在汉族传统医术指导下应用的原生药材，用于治疗疾病。中药能有效治疗新冠肺炎， 一般传统中药材讲究地道药材，是指在一特定自然条件、生态环境的地域内所产的药材，因生产较为集中，栽培技术、采收 加工也都有一定的讲究，以致较同种药材在其他地区所产者品质佳、疗效好。</p>
+            <hr>
+        </div>
+    </section>
+    <!-- 选项卡 -->
+    <section class="tab">
+        <span class="tabItem1">动物药材</span>
+        <span class="tabItem2">植物药材</span>
+        <span class="tabItem3">矿物药</span>
+        <div class="search">
+            <input type="text" placeholder="请输入药材名">
+            <button class="searchBtn">搜索</button>
+            <button class="emptyBtn">清空</button>
+        </div>
+        <div class="display">
+            <div class="pics">
+                <ul id="picList">
+                    <li><a href="#"><img src="/img/animalImg/1.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="/img/animalImg/2.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="/img/animalImg/3.jfif" alt=""></a></li>
+                    <li><a href="#"><img src="/img/animalImg/4.jfif" alt=""></a></li>
+                    <li><a href="#"><img src="/img/animalImg/5.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="details1">
+                <div class="dHeader">动物类药材知多少
+                <div class="arrowIcon">
+                    <div class="downArrow arrow"></div>
+                    <div class="upArrow arrow"></div>
+                </div>
+            </div>
+                <div class="describe">
+                    动物类药材，是指源于动物全体﹑器官、组织、提取物或加工品的资源性产品，与植物药、矿物药共同构成了中药材应用体系。我国从古到今都十分重视动物类药材的开发与利用，诞生了六神丸、片仔癀、乌鸡白凤丸、安宫牛黄丸等经典名药。但随着我国经济发展与城市化进程加速，野生动物资源快速枯竭，导致近20年来动物类中药材在各版《中华人民共和国药典》（以下简称《中国药典》）目录中收载的数量不断减少。从2000年版《中国药典》到2020年版《中国药典》，动物类中药材收载比重已由9.47%下降到5.43%。
+                </div>
+            </div>
+        </div>
+  
+        <include src="../components/medicine/plant.html" ></include>
+        <include src="../components/medicine/coal.html" ></include>
+
+    </section>
+    <!-- 底部 -->
+    <footer>
+        <include src="../components/footer.html" ></include>
+    </footer>
+ </body>
+ <script>
+    window.localStorage.setItem('pageIndex',4)
+    let tabs = document.querySelector(".tab")
+    let spanArr = tabs.getElementsByTagName("span")
+    let divArr = tabs.getElementsByClassName("display")
+    divArr[0].style.display = 'block';
+    spanArr[0].className ="activeTab";
+    for(let i=0;i<spanArr.length;i++){
+        spanArr[i].onclick=function(){
+        for(let j=0;j<spanArr.length;j++){
+            spanArr[j].className='None';
+            divArr[j].style.display = 'None'
+        }
+        spanArr[i].className ="activeTab";
+        divArr[i].style.display ="block";
+        }
+    }
+    // 搜索跳转
+    let searchBtn = document.querySelector('.searchBtn');
+    let input = document.getElementsByTagName('input');
+    let emptyBtn =document.querySelector('.emptyBtn');
+    searchBtn.onclick=function(){
+        if(input[0].value == '') return;
+        else{
+            window.open(`https://www.zydbk.com/search.html?keywords=${input[0].value}&method=1`);
+        }
+    }
+    emptyBtn.onclick=function(){
+        input[0].value='';
+    }
+//面板折叠
+flex('details1')
+// 手风琴
+display("picList");
+
+ </script>

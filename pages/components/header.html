@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <style>
+        header{
+            background-color: rgb(67, 59, 59);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .title{
+            color: greenyellow;
+            font-size: 24px;
+            padding-top: 10px;
+        }
+        .navMenu{
+            width: 46%;
+            position: relative;
+        }
+        nav ul{
+            list-style-type:none ;
+            display: flex;
+            flex-direction: row;
+        }
+        nav ul li{
+            padding: 0px 30px;
+        }
+       .active{
+        color:coral;
+       }
+       nav a{
+        color: white;
+        font-size: 18px;
+       }
+       nav a:hover{
+        color:coral
+       }
+       .dropDown{
+        display: none;
+        position: absolute;
+        right:200px;
+        top:40px;
+        background-color: white;
+        align-items: center;
+        -webkit-box-shadow: 3px 3px 10px #888888;
+        box-shadow: 3px 3px 10px #888888;
+        z-index:1000;
+
+       }
+       .dropDown ul{
+        padding: 0px 8px 0px 8px;
+       }
+       .dropDown ul li{
+        margin:4px 2px;
+       }
+    </style>
+
+</head>  
+<body>
+    <header>
+        <div class="title">
+            中医药文化宣传门户
+        </div>
+        <div class="navMenu">
+            <nav>
+                <ul class="nav">
+                    <li>
+                        <a href="/pages/index.html" rel="external">首页</a>
+                    </li>
+                    <li>
+                        <a href="/pages/policy/index.html" rel="external">政策</a>
+                    </li>
+                    <li>
+                        <a href="/pages/news/index.html">新闻动态</a>
+                    </li>
+                    <li>
+                        <a href="/pages/health/meridian.html">中医养生</a>
+                    </li>
+                    <li>
+                        <a href="/pages/medicine/index.html">药材大全</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="dropDown">
+                <ul>
+                    <li><a href="/pages/health/meridian.html">中医养生</a></li>
+                    <li> <a href="/pages/health/qigong.html">气功养生</a></li>
+                    <li><a href="/pages/health/diet.html">药膳</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+<script>
+
+    let menus = document.querySelectorAll('.navMenu ul li a');
+    menus[window.localStorage.getItem("pageIndex")].className = 'active'
+    const nav= document.querySelector('.nav');
+    const drop =document.querySelector('.dropDown');
+    const liArray = nav.getElementsByTagName('li');
+    liArray[3].onmouseenter=function(){
+        drop.style.display='block';
+    }
+    liArray[3].onmouseleave = function(){
+        drop.style.display='none';
+    }
+    drop.onmouseenter=function(){
+        drop.style.display='block';
+    }
+    drop.onmouseleave = function(){
+        drop.style.display='none';
+    }
+
+</script>
+</html>
