@@ -162,7 +162,7 @@ padding-top:0px;
 .showPart .masterPiece .bookImg{
     width:200px;
     height:200px;
-    background: url('/img/book.jpg');
+    background: url('../img/book.jpg');
     background-size: cover;
 }
 .showPart .content{
@@ -189,7 +189,7 @@ padding-top:0px;
 .showPart .item .bookImg{
     width:200px;
     height:200px;
-    background: url('/img/item.jfif');
+    background: url('../img/item.jfif');
     background-size: cover;
 }
 .showPart ul{

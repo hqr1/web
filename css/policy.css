@@ -1,6 +1,6 @@
 .banner .backgroundImg{
     width:1280px;
-    background: url('/img/policyPic.jpg');
+    background: url('../img/policyPic.jpg');
     height: 260px;
     background-size: cover;
     margin: 0 auto;
